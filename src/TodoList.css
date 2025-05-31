@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffe5d9 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.todo-container {
+  text-align: center;
+  margin-top: 60px;
+  background: rgba(255, 248, 220, 0.95);
+  border: 1px solid #e0cfc1;
+  padding: 40px 30px 30px 30px;
+  width: 95%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+  font-family: inherit;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 28px;
+  color: #e76f51;
+  letter-spacing: 1px;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.todo-input {
+  padding: 12px;
+  width: 65%;
+  border: 1.5px solid #f4a261;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.todo-input:focus {
+  border: 1.5px solid #e76f51;
+  outline: none;
+  background: #fffbe6;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #f4a261 60%, #e76f51 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(244, 162, 97, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.add-btn:hover, .add-btn:focus {
+  background: linear-gradient(90deg, #e76f51 60%, #f4a261 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+  padding: 10px 14px;
+  transition: background 0.2s;
+}
+
+.todo-item span {
+  min-width: 200px;
+  text-align: left;
+  font-size: 1.05rem;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #b0b0b0 !important;
+  background: #f7e7e7;
+}
+
+.delete-btn {
+  padding: 6px 14px;
+  background: linear-gradient(90deg, #ff6b6b 60%, #c0392b 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.delete-btn:hover, .delete-btn:focus {
+  background: linear-gradient(90deg, #c0392b 60%, #ff6b6b 100%);
+  color: #fff;
+  transform: scale(1.06);
+}
